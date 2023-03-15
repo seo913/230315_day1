@@ -1,0 +1,12 @@
+# 1. git init
+# 2. git add .
+# 3. git commit -m "first commit"
+# 4. git branch -M main
+# 5. git remote add origin https://github.com/seo913/230315_day1.git
+# 6. git remote -v
+# 7. git push -u origin main
+
+
+
+#  README.md
+# .gitignore
