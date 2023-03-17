@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    height: 100vh;
+    background-color: aquamarine;
+    flex-direction: row; /*row 가로  column 세로*/
+    justify-content: space-between; /*justify-content 메인방향 */
+    /* align-items: center;  */
+    /*align-items 중간축*/
+    
+    
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    
+}
+.box:nth-child(1){
+    background-color: pink;
+}
+
+.box:nth-child(2){
+    background-color: royalblue;
+}
+
+.box:nth-child(3){
+    background-color: darkcyan;
+}

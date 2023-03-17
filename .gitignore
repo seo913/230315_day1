@@ -1,3 +1,4 @@
+#폴더 전부다 처음 만들었을때
 # 1. git init
 # 2. git add .
 # 3. git commit -m "first commit"
@@ -6,7 +7,10 @@
 # 6. git remote -v
 # 7. git push -u origin main
 
-
+# 수정했을경우에는
+# 1. git add .
+# 2. git commit -m "수정한내용에대한 간략한 설명"
+# 3. git push -u origin main
 
 #  README.md
 # .gitignore

@@ -1,6 +1,69 @@
-h1{
-    background-color: aquamarine;
+*{
+    margin: 0;
 }
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px; /* 맥스위드를 주고 마진 오토를 주면 화면이 넘어가도 왼쪽오른쪽을 마진이 줘져서 가운데정렬이 가능*/
+    margin: auto;
+}
+
 img{
     width: 108px;
 }
+
+
+button{
+    background-color: white;
+    border: 0;
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: none;
+}
+
+.login{
+    display: inline-block;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 9999px;
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+
+.firstBtn{
+    margin-left: 60px;
+}
+
+.loginBox{
+    align-items: center;
+    display: flex;
+}
+
+.ellipsis{
+    width: 24px;
+    margin-left: 16px;
+}
+
+@media(min-width:1024px){
+    button{
+        display: inline-block;
+    }
+
+    .ellipsis{
+        display: none;
+    }
+
+    .login{
+        color: #737373;
+        font-size: 16px;
+        border: 0;
+        padding: 0;
+    }
+}
+
+
+

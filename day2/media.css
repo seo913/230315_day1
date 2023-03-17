@@ -1,0 +1,17 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+}
+
+@media(min-width: 768px){
+    .box{
+    background-color: pink;
+    } 
+}
+
+@media(min-width: 1024px){
+    .box{
+    background-color: salmon;
+    } 
+}
