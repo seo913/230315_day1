@@ -1,0 +1,27 @@
+$primary: #222222;
+$secondary: #737373;
+$techitOrange: #e67800;
+$complete: #059669;
+$ing: #1d4ed8;
+$end: #3f3f46;
+$border: #d4d4d4;
+
+$pc: 1280px;
+
+%maxWidth {
+  max-width: 1280px;
+  margin: auto;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+@mixin responsive($device) {
+  @if $device == "pc" {
+    @media (min-width: $pc) {
+      @content;
+    }
+  }
+}

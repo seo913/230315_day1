@@ -1,0 +1,332 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+    body {
+        margin: 0;
+        color: #222222;
+        font-family: "Pretendard";
+
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px;
+        max-width: 1280px;
+        margin: auto;
+    }
+    
+    .logo {
+        width: 108px;
+    }
+    
+    button {
+        background-color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .menu button {
+        display: none;
+        border: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    
+    .menu button:nth-child(2) {
+        margin-left: 44px;
+    }
+    
+    .loginBox {
+        display: flex;
+        align-items: center;
+    }
+    
+    .login {
+        display: inline-block;
+        border: 1px solid rgb(232, 232, 232);
+        border-radius: 9999px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    
+    .ellipsis {
+        width: 24px;
+        margin-left: 16px;
+    }
+    
+    @media (min-width: 1024px) {
+        .menu button {
+        display: inline-block;
+        }
+    
+        .login {
+        color: #737373;
+        font-size: 16px;
+        border: 0px;
+        padding: 0px;
+        }
+    
+        .ellipsis {
+        display: none;
+        }
+    }
+
+    .banner{
+        position: relative;
+    }
+
+    .banner img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover; /* 비율 안깨지게 하기 */
+    }
+
+    .bannerMessage{
+        position: absolute;
+        top: 50%;
+        margin-left: 96px;
+        font-size: 18px;
+        transform: translateY(-50%);
+    }
+
+    .bannerTitle{
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .content{
+        max-width: 1280px;
+        margin: auto;
+        margin-top: 72px;
+    }
+
+    .contentTitle{
+        color: #E67800;
+        font-size: 16px;
+        font-weight: 600;
+
+    }
+
+    .contentDescription{
+        margin-top: 16px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .contentsDetail{
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .contentGrid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    @media(min-width:768px){
+        .contentGrid{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+    }
+    @media(min-width:1280px){
+        .contentGrid{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+        }
+    }
+
+    .cardImg img:hover{
+        transform: scale(1.05);        
+        
+    }
+
+    .contentCard{
+        overflow: hidden;
+        width: 290px;
+        border-radius: 10px;
+
+    }
+
+
+    .contentCard img{
+        transition: all 0.5s;
+        width: 290px;
+        border-radius: 10px;
+        display: inline-block;
+        padding: auto;
+        justify-items: center;
+    }
+
+    .alrim{
+        color: #059669;
+        border: 1px solid #059669;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: -5px;
+        font-size: 16px;
+        padding: 6px 6px;
+    }
+
+    .ing{
+        color: #1d4ed8;
+        border: 1px solid #1d4ed8;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: -5px;
+        font-size: 16px;
+        padding: 6px 6px;
+        
+    }
+
+    .close{
+        color: #3f3f46;
+        border: 1px solid #3f3f46;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: -5px;
+        font-size: 16px;
+        padding: 6px 6px;
+    }
+
+
+    .classTitle{
+        font-weight: 600;
+    }
+
+    .date{
+        color: #a3a3a3;
+        font-size: 16px;
+    }
+    
+    .classMain{ 
+        padding-right: 25px;
+        font-size: 18px;
+        margin-top: 10px;
+        
+    }
+
+    .rastImg{
+        position: relative;
+    }
+
+    .rastImg img{
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+        
+    }
+
+    .rastImgText{
+        position: absolute;
+        left: 100px;
+        bottom: 30px;
+    }
+
+    .rastP{
+        font-size: 13px;
+        font-weight: 600;
+        color: #161643;
+        margin-bottom: 10px;
+    }
+
+    .rastP2{
+        font-weight: 600;
+    }
+
+    .rastP3{
+        font-size: 13px;
+        color: #737373;
+        font-weight: 600;
+    }
+
+    .girdLastCon{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media(min-width:768px){
+        .girdLastCon{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .gridLastCard{
+        padding: 10px;
+        position: relative;
+    }
+
+    .gridLastCard img{
+        height: 300px;
+        width: 600px;
+    }
+
+    .gridBoxText{
+        position: absolute;
+        left: 50px;
+        bottom: 150px;
+    }
+    
+
+
+    .LastFlex{
+        margin-top: 5px;
+        padding-top: 15px;
+        margin: 20px;
+        border-top: 1px solid #a3a3a3 ;
+        border-bottom: 1px solid #a3a3a3;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        
+        
+    }
+
+    .ol1{
+        font-size: 12px;
+        color: #737373;
+        font-weight: 600;
+        margin-left: 60%;
+        padding-bottom: 15px;
+    }   
+    .ol2{
+        margin-left: 200px;
+        font-size: 12px;
+        color: #737373;
+        font-weight: 600;
+    }
+
+    a{
+        text-decoration-line: none;
+        color: black;
+        font-size: 14px;
+    }
+
+    span{
+        margin-left: 20px;
+        margin-right: ;
+        border: 0;
+        border-radius: 19999px;
+        background-color: #ff1493;
+        font-weight: 600;
+        font-size: 12px;
+        color: white;
+        padding: 7px 10px;
+
+    }
+    
+
+    footer{
+        color: #737373;
+        font-size: 12px;
+        margin: 30px 0 0 20px;        
+    }
+
+

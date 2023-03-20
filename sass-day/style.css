@@ -1,0 +1,46 @@
+.info, .alert, .success {
+  color: whitesmoke;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.success, .alert, .info {
+  color: whitesmoke;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+div h1 {
+  background-color: #253342;
+}
+div h2 {
+  background-color: #ebb8dd;
+}
+div h3 {
+  background-color: #bf2c34;
+}
+div h4 {
+  background-color: #53bda5;
+}
+div h5 {
+  background-color: #cbd6e2;
+}
+div a h6 {
+  background-color: #be398d;
+}
+
+.info {
+  background-color: darkgray;
+}
+
+.alert {
+  background-color: darkred;
+}
+
+.success {
+  background-color: darkgreen;
+}
+
+/*# sourceMappingURL=style.css.map */

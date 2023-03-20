@@ -1,0 +1,56 @@
+@use 'color';
+@import 'color';
+
+div {
+  h1 {
+    background-color: color.$softBlack;
+  }
+
+  h2 {
+    background-color: color.$rosePink;
+  }
+
+  h3 {
+    background-color: color.$darkRed;
+  }
+
+  h4 {
+    background-color: color.$seaGreen;
+  }
+
+  h5 {
+    background-color: color.$lightGray;
+  }
+
+  a {
+    h6 {
+      background-color: color.$megenta;
+    }
+  }
+}
+
+// .info{
+//     @include btnStyle;
+// }
+
+// .alert{
+//     @include btnStyle($color: darkred);
+// }
+
+// .success{
+//     @include btnStyle($color: darkgreen);
+// }
+
+.info {
+  @extend %btnStyle;
+  background-color: darkgray;
+}
+
+.alert {
+  @extend %btnStyle;
+  background-color: darkred;
+} 
+.success {
+  @extend %btnStyle;
+  background-color: darkgreen;
+}

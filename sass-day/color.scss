@@ -1,0 +1,21 @@
+$softBlack: #253342;
+$rosePink: #ebb8dd;
+$darkRed: #bf2c34;
+$seaGreen: #53bda5;
+$lightGray: #cbd6e2;
+$megenta: #be398d;
+
+// @mixin btnStyle($color: darkgray) {
+//     background-color: $color;
+//     color: whitesmoke;
+//     border: 0;
+//     border-radius: 12px;
+//     padding: 12px;
+// }
+
+%btnStyle {
+  color: whitesmoke;
+  border: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
