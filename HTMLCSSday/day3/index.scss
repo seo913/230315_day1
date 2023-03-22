@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  color: #222222;
+  font-family: 'Pretendard';
+
+  .header{
+    .logo {
+        width: 108px;
+    }
+    button {
+        background-color: white;
+        font-size: 16px;
+        font-weight: 600;
+        display: none;
+        border: 0px;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        &:nth-child(2) {
+            margin-left: 44px;
+    }
+
+    .loginBox {
+        display: flex;
+        align-items: center;
+        .login {
+            display: inline-block;
+            border: 1px solid rgb(232, 232, 232);
+            border-radius: 9999px;
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .ellipsis {
+            width: 24px;
+            margin-left: 16px;
+        }
+    }
+  }
+}
+}

@@ -1,15 +1,25 @@
 {
-  "name": "jaem",
-  "description": "Good Person",
-  "image": "https://이미지 경로",
+  "name": "JJABlengoku",
+  "description": "JJABDemonSlayer",
+  "image": "https://gateway.pinata.cloud/ipfs/Qmc5N8JpZb6tVEeZiZEiSjt6qpuwQoG98gvrRZYyimn8pg?_gl=1*1vaprf*_ga*YzBmOWIxNGItOGEyMC00OGQ3LTgxYWEtNmFhMzdkMjc2NGNk*_ga_5RMPXG14TE*MTY3OTQ1ODc2MC4xLjEuMTY3OTQ1OTIyMi4xNS4wLjA.",
   "attributes": [
     {
       "trait_type": "BACKGROUND",
-      "value": "Aquamarien"
+      "value": "white"
     },
     {
-      "trait_type": "EARRING",
-      "value": "Silver Hoop"
+      "trait_type": "weapon",
+      "value": "fire"
+    },
+    {
+      "trait_type": "hair",
+      "value": "red",
+      "value": "yellow"
+    },
+    {
+      "trait_type": "Cloak",
+      "value": "red",
+      "value": "yellow"
     }
   ]
 }

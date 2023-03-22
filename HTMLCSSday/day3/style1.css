@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  color: #222222;
+  font-family: "Pretendard";
+}
+body .header .logo {
+  width: 108px;
+}
+body .header button {
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+  border: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+body .header button:nth-child(2) {
+  margin-left: 44px;
+}
+body .header button .loginBox {
+  display: flex;
+  align-items: center;
+}
+body .header button .loginBox .login {
+  display: inline-block;
+  border: 1px solid rgb(232, 232, 232);
+  border-radius: 9999px;
+  padding: 8px 16px;
+  font-size: 14px;
+}
+body .header button .loginBox .ellipsis {
+  width: 24px;
+  margin-left: 16px;
+}
+
+/*# sourceMappingURL=style1.css.map */
