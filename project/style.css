@@ -13,6 +13,29 @@ body main {
   align-items: center;
   opacity: 0.5;
 }
+body main .quotes {
+  position: relative;
+  font-size: 60px;
+}
+body main .quotes .quotesAddBtn {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 130px;
+  height: 40px;
+  border: 0;
+}
+body main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+body main .newQuotes {
+  display: none;
+}
+body main .newQuotes .newQuotesList {
+  list-style: none;
+}
 body .time {
   font-size: 40px;
   font-weight: 600;

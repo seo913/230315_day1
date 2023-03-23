@@ -14,6 +14,42 @@ body{
         align-items: center; // 가로기준 가운데 정렬 
         opacity: 0.5;
 
+        .quotes{
+            position: relative;
+            font-size: 60px;
+            .quotesAddBtn{
+                display: none;
+                position: absolute;
+                top: 50%;
+                right: 50%;
+                transform: translate(50%, -50%); //정가운데로 줄때
+                width: 130px;
+                height: 40px;
+                border: 0;
+                
+            }
+
+            &:hover{
+                .quotesAddBtn{
+                display: inline-block;
+            }
+            }
+        }
+        
+        .newQuotes{
+            display: none;
+            
+            .newQuotesInput{
+                
+            }
+            .newQuotesButton{
+
+            }
+            .newQuotesList{
+                list-style: none;
+            }
+        }
+
     }
     
     .time{
