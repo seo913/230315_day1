@@ -70,7 +70,51 @@ main .search .searchLogo {
 main .searchResult {
   display: none;
 }
+main .nft {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+main .nft img {
+  width: 256px;
+  height: 256px;
+}
+main .nft .nftHover {
+  position: absolute;
+  display: none;
+  width: 256px;
+  height: 256px;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+}
+main .nft .nftHover a {
+  color: white;
+}
+main .nft .nftHover button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -5px;
+  border: 0;
+  border-radius: 9999px;
+  width: 22px;
+  height: 22px;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.view {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  margin: 30px;
+}
 .time {
   font-size: 40px;
   font-weight: 600;

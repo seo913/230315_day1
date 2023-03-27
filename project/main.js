@@ -99,17 +99,25 @@ function onClickRegist() {
 //   question,
 // }
 
+let isLoading = false;
 
 async function onClickSearch(){
   const searchInput = document.querySelector('.searchInput');
   const searchResult = document.querySelector('.searchResult');
+
   if(!searchInput.value) return;
+  if(isLoading) return;
 
+  //여기까지오면 === isLoading false
+
+  isLoading = true;
   const question = searchInput.value;
-
   searchInput.value = '검색 중 입니다... 잠시만 기다려주세요.';
 
+  console.log('로딩중');
+
   //프론트엔드에서 백엔드로 보내는 코드 awiat는 그냥 사용 못해서 함수 앞에 async
+  
   const response = await axios.post( //백엔드가 포스트 요청을 받기위해
     "https://holy-fire-2749.fly.dev/chat", //첫번째 백엔드주소
     {question,}, //두번째 백엔드 제이슨 오브젝트형{} 몸통
@@ -125,5 +133,18 @@ async function onClickSearch(){
     searchResult.innerText = response.data.choices[0].message.content;
   }
   searchInput.value =""; //검색후 벨류값을 초기화
+  isLoading = false ;
+}
+
+let nft =  document.querySelector('.nft');
+let viewnft = document.querySelector('.viewNFT');
+function onClickToggle() {
+  document.querySelector('.nft').style.display ='none';
+  document.querySelector('.view').style.display ='block';
+}
+
+function onClickView(){
+  document.querySelector('.nft').style.display ='block';
+  document.querySelector('.view').style.display ='none';
 }
 
