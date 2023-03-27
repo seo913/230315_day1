@@ -1,9 +1,20 @@
 
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
 body{
     margin: 0;
     font-family: 'Climate Crisis', cursive;
+}
     main{
-        position: fixed;
+        position: fixed; 
         z-index: 2;
         width: 100vw;
         height: 100vh;
@@ -17,6 +28,13 @@ body{
         .quotes{
             position: relative;
             font-size: 60px;
+            text-align: center;
+            .quotesMsg{
+                width: 500px;
+                height: 100px;
+                overflow: hidden;
+            }
+
             .quotesAddBtn{
                 display: none;
                 position: absolute;
@@ -40,17 +58,34 @@ body{
             display: none;
             
             .newQuotesInput{
-                
+                border-radius: 5px;
             }
             .newQuotesButton{
-
+                border: 0;
+                background-color: transparent;
+                font-weight: 600;
+                &:hover{
+                    background-color: beige;
+                }
             }
+
+
             .newQuotesList{
                 list-style: none;
             }
         }
-
+        .search{
+            .searchLogo{
+                width: 30px;
+                height: 30px;
+                animation: spin 5s linear infinite;
+            }
+        }
+        .searchResult{
+            display: none;
+        }
     }
+    
     
     .time{
         font-size: 40px;
@@ -67,4 +102,4 @@ body{
         object-fit: cover; // 안깨지게하기
     }
 
-} 
+    

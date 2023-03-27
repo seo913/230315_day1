@@ -87,3 +87,43 @@ function onClickRegist() {
   newQuotes.style.display = 'none';
 //   newQuotesInput.value = '';
 }
+
+
+// const a ={
+//   question: '질문입니다.',
+// }
+// const b ={
+//   question: question,
+// }
+// const c ={
+//   question,
+// }
+
+
+async function onClickSearch(){
+  const searchInput = document.querySelector('.searchInput');
+  const searchResult = document.querySelector('.searchResult');
+  if(!searchInput.value) return;
+
+  const question = searchInput.value;
+
+  searchInput.value = '검색 중 입니다... 잠시만 기다려주세요.';
+
+  //프론트엔드에서 백엔드로 보내는 코드 awiat는 그냥 사용 못해서 함수 앞에 async
+  const response = await axios.post( //백엔드가 포스트 요청을 받기위해
+    "https://holy-fire-2749.fly.dev/chat", //첫번째 백엔드주소
+    {question,}, //두번째 백엔드 제이슨 오브젝트형{} 몸통
+    {headers : { //헤더
+      "Content-Type": "application/json",
+      Authorization: "Bearer BLOCKCHAINSCHOOL3",
+    },
+    } 
+  ); 
+
+  if(response.status === 200){
+    searchResult.style.display = 'inline';
+    searchResult.innerText = response.data.choices[0].message.content;
+  }
+  searchInput.value =""; //검색후 벨류값을 초기화
+}
+

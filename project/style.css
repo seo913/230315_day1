@@ -1,8 +1,17 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   font-family: "Climate Crisis", cursive;
 }
-body main {
+
+main {
   position: fixed;
   z-index: 2;
   width: 100vw;
@@ -13,11 +22,17 @@ body main {
   align-items: center;
   opacity: 0.5;
 }
-body main .quotes {
+main .quotes {
   position: relative;
   font-size: 60px;
+  text-align: center;
 }
-body main .quotes .quotesAddBtn {
+main .quotes .quotesMsg {
+  width: 500px;
+  height: 100px;
+  overflow: hidden;
+}
+main .quotes .quotesAddBtn {
   display: none;
   position: absolute;
   top: 50%;
@@ -27,21 +42,42 @@ body main .quotes .quotesAddBtn {
   height: 40px;
   border: 0;
 }
-body main .quotes:hover .quotesAddBtn {
+main .quotes:hover .quotesAddBtn {
   display: inline-block;
 }
-body main .newQuotes {
+main .newQuotes {
   display: none;
 }
-body main .newQuotes .newQuotesList {
+main .newQuotes .newQuotesInput {
+  border-radius: 5px;
+}
+main .newQuotes .newQuotesButton {
+  border: 0;
+  background-color: transparent;
+  font-weight: 600;
+}
+main .newQuotes .newQuotesButton:hover {
+  background-color: beige;
+}
+main .newQuotes .newQuotesList {
   list-style: none;
 }
-body .time {
+main .search .searchLogo {
+  width: 30px;
+  height: 30px;
+  animation: spin 5s linear infinite;
+}
+main .searchResult {
+  display: none;
+}
+
+.time {
   font-size: 40px;
   font-weight: 600;
   padding: 5px 10px;
 }
-body video {
+
+video {
   position: fixed;
   top: 0;
   left: 0;
